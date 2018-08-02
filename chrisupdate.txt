@@ -1,0 +1,52 @@
+ansi master
+
+sudo su - ansible
+in se[parate folder create and deploy playbookds
+
+gav einfo
+on friday unleaas az multiaz
+
+
+try to clean up config files 
+dont put ip add, no vpc's
+only need provisioning and deploying
+
+- add_host:
+      hostname: "{{ item }}"
+      groups: "{{ component }}"
+    with_items: "{{ instance_ips }}"
+    tags:
+      - always
+- add_host:
+      hostname: "{{ item }}"
+      groups: "{{ component }}"
+    with_items: "{{ instance_ips }}"
+    tags:
+      - always 
+
+
+are you really sure ansible control machine communicates with provisioned instances without any key
+
+with ansible-playbook 
+Sms_install.yml --extra-vars 
+"@vars/main.yml" --extra-vars 
+"component=Sms-main env=devint"
+
+no sec gps .. use sec gps which i gav in the email
+dont change hostnames of vms.. try t o use whatever hostname comes up .. like ip ad.sth internal everthing
+
+
+if doing on fridAY =-
+EC2 DAASHBOARD--ArrisComp
+
+cockroach dbmain AWS dashboard ec2 instances --enabl eth etags 
+az is2a then it is a, if az is 2b it is stand by
+
+not able to login if ur ip is not in the bastion grou[p.
+
+dont create vpc in th escript 
+only create vm an install it
+cd roles-aws cockroach is fo rprovisionning
+vi main.yml
+
+
